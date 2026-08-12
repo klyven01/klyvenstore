@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KLYVEN — Premium Indian streetwear. Move different." />
+    <meta name="theme-color" content="#080808" />
+    <title>KLYVEN — Move Different.</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="overrides.css?v=2" />
+  </head>
+  <body>
+    <div class="announcement">DROP 01 IS LIVE <span>•</span> FREE SHIPPING ABOVE ₹1,499 <span>•</span> MADE FOR THE MOVE</div>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#home" aria-label="KLYVEN home">KLYVEN<span>®</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#shop">Shop</a><a href="#drop">New Drop</a><a href="#story">About</a><a href="#track">Track</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="searchToggle" aria-label="Search">⌕</button>
+        <button class="icon-button" data-account aria-label="Account">◯</button>
+        <button class="icon-button" data-open="wishlist" aria-label="Wishlist">♡<small id="wishCount">0</small></button>
+        <button class="icon-button" data-open="cart" aria-label="Cart">▱<small id="cartCount">0</small></button>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">MENU</button>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+    <div id="drawerRoot"></div><div id="modalRoot"></div>
+    <footer id="footer"></footer>
+    <script type="module" src="app.js?v=3"></script>
+    <script type="module" src="features.js?v=2"></script>
+  </body>
+</html>

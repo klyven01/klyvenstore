@@ -1,0 +1,21 @@
+{
+  "name": "klyven-store",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js",
+    "db:migrate": "psql \"$DATABASE_URL\" -f database/schema.sql",
+    "check": "node --check server/index.js && node --check server/services/orders.js && node --check server/services/notifications.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  }
+}
